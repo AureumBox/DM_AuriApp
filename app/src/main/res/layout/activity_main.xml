@@ -28,7 +28,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/bookTitle"
+                    android:id="@+id/text_bookTitle"
                     style="@style/BookTitleStyle"
                     android:layout_width="254dp"
                     android:layout_height="62dp"
@@ -39,38 +39,38 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/imageView_bookcover"
                     android:layout_width="314dp"
                     android:layout_height="336dp"
                     android:layout_marginTop="8dp"
                     android:contentDescription="@string/img_description"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/bookTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/text_bookTitle"
                     app:srcCompat="@drawable/orv_bookcover" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/text_description"
                     android:layout_width="308dp"
                     android:layout_height="114dp"
                     android:layout_marginStart="24dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="24dp"
                     android:text="@string/book_description"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_bookcover" />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/btn_preorder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="24dp"
                     android:text="@string/preorder_btn"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                    app:layout_constraintTop_toBottomOf="@+id/text_description" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>

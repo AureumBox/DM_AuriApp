@@ -1,6 +1,7 @@
 package com.example.auriapp
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -8,21 +9,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class PreorderInfo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_preorder_info)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        val btnPreorder = findViewById<Button>(R.id.btn_preorder)
+        val btnShop = findViewById<Button>(R.id.btn_shop)
 
-        btnPreorder.setOnClickListener{
-            val intent = Intent(this, PreorderInfo::class.java)
+        btnShop.setOnClickListener{
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://yenpress.com/titles/9798400903526-omniscient-reader-s-viewpoint-novel-vol-1"))
             startActivity(intent)
         }
     }

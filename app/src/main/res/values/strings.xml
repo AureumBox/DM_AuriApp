@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">AuriApp</string>
     <string name="book_title">Omniscient Reader\'s Viewpoint</string>
+    <string name="book_author">De singNsong</string>
     <string name="img_description">Portada del libro</string>
     <string name="book_description">
         Kim Dokja es un oficinista que ha leído una novela durante gran parte de su vida. Cuando la novela finalmente termina en el capítulo 3149, el mundo de la novela de repente se convierte en realidad y Dokja se convierte en la única persona que sabe cómo terminará el mundo.
