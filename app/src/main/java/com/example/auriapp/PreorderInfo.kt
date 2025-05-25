@@ -3,6 +3,7 @@ package com.example.auriapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,12 +21,18 @@ class PreorderInfo : AppCompatActivity() {
             insets
         }
 
+        // open link in browser
         val btnShop = findViewById<Button>(R.id.btn_shop)
-
         btnShop.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 "https://yenpress.com/titles/9798400903526-omniscient-reader-s-viewpoint-novel-vol-1".toUri())
             startActivity(intent)
+        }
+
+        // go back to previous screen
+        val btnBack = findViewById<ImageButton>(R.id.btn_back)
+        btnBack.setOnClickListener {
+            finish()
         }
     }
 }
