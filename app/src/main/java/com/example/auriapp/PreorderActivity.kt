@@ -13,11 +13,11 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.net.toUri
 import java.util.Calendar
 
-class PreorderInfo : AppCompatActivity() {
+class PreorderActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_preorder_info)
+        setContentView(R.layout.activity_preorder)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

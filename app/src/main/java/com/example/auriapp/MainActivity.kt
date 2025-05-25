@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val btnPreorder = findViewById<Button>(R.id.btn_preorder)
 
         btnPreorder.setOnClickListener{
-            val intent = Intent(this, PreorderInfo::class.java)
+            val intent = Intent(this, PreorderActivity::class.java)
             startActivity(intent)
         }
     }
