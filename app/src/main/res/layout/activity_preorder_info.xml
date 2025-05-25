@@ -16,8 +16,8 @@
 
         <View
             android:id="@+id/view_background"
-            android:layout_width="415dp"
-            android:layout_height="390dp"
+            android:layout_width="413dp"
+            android:layout_height="345dp"
             android:background="#B39DDB"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -25,8 +25,8 @@
 
         <ImageView
             android:id="@+id/img_yenpress_logo"
-            android:layout_width="83dp"
-            android:layout_height="63dp"
+            android:layout_width="69dp"
+            android:layout_height="45dp"
             android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -36,8 +36,8 @@
 
         <ImageView
             android:id="@+id/img_bookcover"
-            android:layout_width="217dp"
-            android:layout_height="302dp"
+            android:layout_width="206dp"
+            android:layout_height="274dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -56,21 +56,42 @@
             app:layout_constraintTop_toBottomOf="@+id/img_bookcover" />
 
         <TextView
+            android:id="@+id/text_countDownTimer"
+            style="@style/BookTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="00:00:00"
+            app:layout_constraintBottom_toTopOf="@+id/btn_shop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
             android:id="@+id/text_bookAuthor"
             style="@style/SubTitleStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
             android:text="@string/book_author"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_detailedBookTitle" />
+
+        <TextView
+            android:id="@+id/text_countDownTitle"
+            style="@style/SubTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faltan"
+            app:layout_constraintBottom_toTopOf="@+id/text_countDownTimer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/btn_shop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="56dp"
+            android:layout_marginBottom="32dp"
             android:text="Ir a Yen Store"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -94,7 +115,7 @@
             android:layout_marginTop="8dp"
             android:text="Lanzamiento: 22 de julio, 2025"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
         <TextView
             android:id="@+id/textView15"
@@ -104,7 +125,7 @@
             android:layout_marginTop="8dp"
             android:text="Género: Acción, Aventura, Fantasía"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
         <ImageButton
             android:id="@+id/btn_back"
