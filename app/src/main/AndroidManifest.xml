@@ -13,6 +13,7 @@
         tools:targetApi="31">
         <activity
             android:name=".PreorderInfo"
+            android:theme="@style/Theme.AuriApp"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
